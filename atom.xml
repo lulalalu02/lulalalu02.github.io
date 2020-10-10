@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lulalalu02.github.io/</id>
     <title>Gridea</title>
-    <updated>2020-10-10T07:36:06.759Z</updated>
+    <updated>2020-10-10T07:37:20.651Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lulalalu02.github.io/"/>
     <link rel="self" href="https://lulalalu02.github.io/atom.xml"/>
@@ -35,19 +35,13 @@ mystr.split(str=&quot; &quot;, 2)</p>
 把字符串的第一个字符大写<br>
 mystr.capitalize()</p>
 <p>&lt;7&gt;title<br>
-把字符串的每个单词首字母大写</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>a = &quot;hello itcast&quot;<br>
+把字符串的每个单词首字母大写<br>
+a = &quot;hello itcast&quot;<br>
 a.title()<br>
-'Hello Itcast'<br>
-&lt;8&gt;startswith<br>
+'Hello Itcast'</p>
+<p>&lt;8&gt;startswith<br>
 检查字符串是否是以 obj 开头, 是则返回 True，否则返回 False<br>
 mystr.startswith(obj)</p>
-</blockquote>
-</blockquote>
-</blockquote>
 <p>&lt;9&gt;endswith<br>
 检查字符串是否以obj结束，如果是返回True,否则返回 False.<br>
 mystr.endswith(obj)</p>
@@ -73,19 +67,13 @@ mystr.lstrip()</p>
 删除 mystr 字符串末尾的空白字符<br>
 mystr.rstrip()</p>
 <p>&lt;17&gt;strip<br>
-删除mystr字符串两端的空白字符</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>a = &quot;\n\t itcast \t\n&quot;<br>
+删除mystr字符串两端的空白字符<br>
+a = &quot;\n\t itcast \t\n&quot;<br>
 a.strip()<br>
-'itcast'<br>
-&lt;18&gt;rfind<br>
+'itcast'</p>
+<p>&lt;18&gt;rfind<br>
 类似于 find()函数，不过是从右边开始查找.<br>
 mystr.rfind(str, start=0,end=len(mystr) )</p>
-</blockquote>
-</blockquote>
-</blockquote>
 <p>&lt;19&gt;rindex<br>
 类似于 index()，不过是从右边开始.<br>
 mystr.rindex( str, start=0,end=len(mystr))</p>
