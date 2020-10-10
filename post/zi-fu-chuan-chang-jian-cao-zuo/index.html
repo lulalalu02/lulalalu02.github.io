@@ -1,0 +1,265 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>字符串常见操作 | Gridea</title>
+<link rel="shortcut icon" href="https://lulalalu02.github.io//favicon.ico?v=1602315362256">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://lulalalu02.github.io//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="字符串常见操作 | Gridea - Atom Feed" href="https://lulalalu02.github.io//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="&lt;1&gt;find
+检测 str 是否包含在 mystr中，如果是返回开始的索引值，否则返回-1
+mystr.find(str, start=0, end=len(mystr))
+&lt;2&gt;index
+跟find()方法一样..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://lulalalu02.github.io/">
+  <img class="avatar" src="https://lulalalu02.github.io//images/avatar.png?v=1602315362256" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              字符串常见操作
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-10-10
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>&lt;1&gt;find<br>
+检测 str 是否包含在 mystr中，如果是返回开始的索引值，否则返回-1<br>
+mystr.find(str, start=0, end=len(mystr))</p>
+<p>&lt;2&gt;index<br>
+跟find()方法一样，只不过如果str不在 mystr中会报一个异常.<br>
+mystr.index(str, start=0, end=len(mystr))</p>
+<p>&lt;3&gt;count<br>
+返回 str在start和end之间 在 mystr里面出现的次数<br>
+mystr.count(str, start=0, end=len(mystr))</p>
+<p>&lt;4&gt;replace<br>
+把 mystr 中的 str1 替换成 str2,如果 count 指定，则替换不超过 count 次.<br>
+mystr.replace(str1, str2,  mystr.count(str1))</p>
+<p>&lt;5&gt;split<br>
+以 str 为分隔符切片 mystr，如果 maxsplit有指定值，则仅分隔 maxsplit 个子字符串<br>
+mystr.split(str=&quot; &quot;, 2)</p>
+<p>&lt;6&gt;capitalize<br>
+把字符串的第一个字符大写<br>
+mystr.capitalize()</p>
+<p>&lt;7&gt;title<br>
+把字符串的每个单词首字母大写</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>a = &quot;hello itcast&quot;<br>
+a.title()<br>
+'Hello Itcast'<br>
+&lt;8&gt;startswith<br>
+检查字符串是否是以 obj 开头, 是则返回 True，否则返回 False<br>
+mystr.startswith(obj)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>&lt;9&gt;endswith<br>
+检查字符串是否以obj结束，如果是返回True,否则返回 False.<br>
+mystr.endswith(obj)</p>
+<p>&lt;10&gt;lower<br>
+转换 mystr 中所有大写字符为小写<br>
+mystr.lower()</p>
+<p>&lt;11&gt;upper<br>
+转换 mystr 中的小写字母为大写<br>
+mystr.upper()</p>
+<p>&lt;12&gt;ljust<br>
+返回一个原字符串左对齐,并使用空格填充至长度 width 的新字符串<br>
+mystr.ljust(width)</p>
+<p>&lt;13&gt;rjust<br>
+返回一个原字符串右对齐,并使用空格填充至长度 width 的新字符串<br>
+mystr.rjust(width)</p>
+<p>&lt;14&gt;center<br>
+返回一个原字符串居中,并使用空格填充至长度 width 的新字符串<br>
+mystr.center(width)</p>
+<p>&lt;15&gt;lstrip<br>
+删除 mystr 左边的空白字符<br>
+mystr.lstrip()</p>
+<p>&lt;16&gt;rstrip<br>
+删除 mystr 字符串末尾的空白字符<br>
+mystr.rstrip()</p>
+<p>&lt;17&gt;strip<br>
+删除mystr字符串两端的空白字符</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>a = &quot;\n\t itcast \t\n&quot;<br>
+a.strip()<br>
+'itcast'<br>
+&lt;18&gt;rfind<br>
+类似于 find()函数，不过是从右边开始查找.<br>
+mystr.rfind(str, start=0,end=len(mystr) )</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>&lt;19&gt;rindex<br>
+类似于 index()，不过是从右边开始.<br>
+mystr.rindex( str, start=0,end=len(mystr))</p>
+<p>&lt;20&gt;partition<br>
+把mystr以str分割成三部分,str前，str和str后<br>
+mystr.partition(str)</p>
+<p>&lt;21&gt;rpartition<br>
+类似于 partition()函数,不过是从右边开始.<br>
+mystr.rpartition(str)</p>
+<p>&lt;22&gt;splitlines<br>
+按照行分隔，返回一个包含各行作为元素的列表<br>
+mystr.splitlines()</p>
+<p>&lt;23&gt;isalpha<br>
+如果 mystr 所有字符都是字母 则返回 True,否则返回 False<br>
+mystr.isalpha()</p>
+<p>&lt;24&gt;isdigit<br>
+如果 mystr 只包含数字则返回 True 否则返回 False.<br>
+mystr.isdigit()</p>
+<p>&lt;25&gt;isalnum<br>
+如果 mystr 所有字符都是字母或数字则返回 True,否则返回 False<br>
+mystr.isalnum()</p>
+<p>&lt;26&gt;isspace<br>
+如果 mystr 中只包含空格，则返回 True，否则返回 False.<br>
+mystr.isspace()</p>
+<p>&lt;27&gt;join<br>
+mystr 中每个字符后面插入str,构造出一个新的字符串<br>
+mystr.join(str)</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://lulalalu02.github.io/post/lu-la-la-lu/">
+              <h3 class="post-title">
+                噜啦啦露
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://lulalalu02.github.io//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

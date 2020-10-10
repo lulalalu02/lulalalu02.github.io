@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lulalalu02.github.io/</id>
     <title>Gridea</title>
-    <updated>2020-10-09T12:30:52.996Z</updated>
+    <updated>2020-10-10T07:36:06.759Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lulalalu02.github.io/"/>
     <link rel="self" href="https://lulalalu02.github.io/atom.xml"/>
@@ -10,6 +10,111 @@
     <logo>https://lulalalu02.github.io/images/avatar.png</logo>
     <icon>https://lulalalu02.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[字符串常见操作]]></title>
+        <id>https://lulalalu02.github.io/post/zi-fu-chuan-chang-jian-cao-zuo/</id>
+        <link href="https://lulalalu02.github.io/post/zi-fu-chuan-chang-jian-cao-zuo/">
+        </link>
+        <updated>2020-10-10T07:23:25.000Z</updated>
+        <content type="html"><![CDATA[<p>&lt;1&gt;find<br>
+检测 str 是否包含在 mystr中，如果是返回开始的索引值，否则返回-1<br>
+mystr.find(str, start=0, end=len(mystr))</p>
+<p>&lt;2&gt;index<br>
+跟find()方法一样，只不过如果str不在 mystr中会报一个异常.<br>
+mystr.index(str, start=0, end=len(mystr))</p>
+<p>&lt;3&gt;count<br>
+返回 str在start和end之间 在 mystr里面出现的次数<br>
+mystr.count(str, start=0, end=len(mystr))</p>
+<p>&lt;4&gt;replace<br>
+把 mystr 中的 str1 替换成 str2,如果 count 指定，则替换不超过 count 次.<br>
+mystr.replace(str1, str2,  mystr.count(str1))</p>
+<p>&lt;5&gt;split<br>
+以 str 为分隔符切片 mystr，如果 maxsplit有指定值，则仅分隔 maxsplit 个子字符串<br>
+mystr.split(str=&quot; &quot;, 2)</p>
+<p>&lt;6&gt;capitalize<br>
+把字符串的第一个字符大写<br>
+mystr.capitalize()</p>
+<p>&lt;7&gt;title<br>
+把字符串的每个单词首字母大写</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>a = &quot;hello itcast&quot;<br>
+a.title()<br>
+'Hello Itcast'<br>
+&lt;8&gt;startswith<br>
+检查字符串是否是以 obj 开头, 是则返回 True，否则返回 False<br>
+mystr.startswith(obj)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>&lt;9&gt;endswith<br>
+检查字符串是否以obj结束，如果是返回True,否则返回 False.<br>
+mystr.endswith(obj)</p>
+<p>&lt;10&gt;lower<br>
+转换 mystr 中所有大写字符为小写<br>
+mystr.lower()</p>
+<p>&lt;11&gt;upper<br>
+转换 mystr 中的小写字母为大写<br>
+mystr.upper()</p>
+<p>&lt;12&gt;ljust<br>
+返回一个原字符串左对齐,并使用空格填充至长度 width 的新字符串<br>
+mystr.ljust(width)</p>
+<p>&lt;13&gt;rjust<br>
+返回一个原字符串右对齐,并使用空格填充至长度 width 的新字符串<br>
+mystr.rjust(width)</p>
+<p>&lt;14&gt;center<br>
+返回一个原字符串居中,并使用空格填充至长度 width 的新字符串<br>
+mystr.center(width)</p>
+<p>&lt;15&gt;lstrip<br>
+删除 mystr 左边的空白字符<br>
+mystr.lstrip()</p>
+<p>&lt;16&gt;rstrip<br>
+删除 mystr 字符串末尾的空白字符<br>
+mystr.rstrip()</p>
+<p>&lt;17&gt;strip<br>
+删除mystr字符串两端的空白字符</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>a = &quot;\n\t itcast \t\n&quot;<br>
+a.strip()<br>
+'itcast'<br>
+&lt;18&gt;rfind<br>
+类似于 find()函数，不过是从右边开始查找.<br>
+mystr.rfind(str, start=0,end=len(mystr) )</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>&lt;19&gt;rindex<br>
+类似于 index()，不过是从右边开始.<br>
+mystr.rindex( str, start=0,end=len(mystr))</p>
+<p>&lt;20&gt;partition<br>
+把mystr以str分割成三部分,str前，str和str后<br>
+mystr.partition(str)</p>
+<p>&lt;21&gt;rpartition<br>
+类似于 partition()函数,不过是从右边开始.<br>
+mystr.rpartition(str)</p>
+<p>&lt;22&gt;splitlines<br>
+按照行分隔，返回一个包含各行作为元素的列表<br>
+mystr.splitlines()</p>
+<p>&lt;23&gt;isalpha<br>
+如果 mystr 所有字符都是字母 则返回 True,否则返回 False<br>
+mystr.isalpha()</p>
+<p>&lt;24&gt;isdigit<br>
+如果 mystr 只包含数字则返回 True 否则返回 False.<br>
+mystr.isdigit()</p>
+<p>&lt;25&gt;isalnum<br>
+如果 mystr 所有字符都是字母或数字则返回 True,否则返回 False<br>
+mystr.isalnum()</p>
+<p>&lt;26&gt;isspace<br>
+如果 mystr 中只包含空格，则返回 True，否则返回 False.<br>
+mystr.isspace()</p>
+<p>&lt;27&gt;join<br>
+mystr 中每个字符后面插入str,构造出一个新的字符串<br>
+mystr.join(str)</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[噜啦啦露]]></title>
         <id>https://lulalalu02.github.io/post/lu-la-la-lu/</id>
